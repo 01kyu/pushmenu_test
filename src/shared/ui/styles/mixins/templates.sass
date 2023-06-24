@@ -1,0 +1,17 @@
+@mixin spacing($lvl: 2, $dct: b)
+    @if ($dct == b)
+        padding-bottom: calc($lvl * 0.25rem)
+    @else if ($dct == t)
+        padding-top: calc($lvl * .25rem)
+    @else if ($dct == l)
+        padding-left: calc($lvl * .25rem)
+    @else if ($dct == r)
+        padding-right: calc($lvl * .25rem)
+    @else if ($dct == a)
+              padding: calc($lvl * .25rem)
+
+@mixin conatainer
+    @include spacing(4, r)
+    @include spacing(4, l)
+    @media screen and (max-width: 1000px)
+        @content
