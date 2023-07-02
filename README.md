@@ -1,1 +1,1 @@
-# Push menu for ITGlobal
+# Push menu.
